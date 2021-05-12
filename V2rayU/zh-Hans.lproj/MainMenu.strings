@@ -92,6 +92,12 @@
 /* Class = "NSMenuItem"; title = "Turn v2ray-core Off"; ObjectID = "SML-EF-rdT"; */
 "SML-EF-rdT.title" = "停用v2ray-core";
 
+/* Class = "NSMenuItem"; title = "Change VPN"; ObjectID = "2Bd-oF-Clr"; */
+"2Bd-oF-Clr.title" = "强制切换VPN";
+
+/* Class = "NSMenuItem"; title = "Reboot Speed Detector"; ObjectID = "uVb-15-kEq"; */
+"uVb-15-kEq.title" = "重启速度探测器";
+
 /* Class = "NSMenu"; title = "Substitutions"; ObjectID = "VH3-Bb-D9P"; */
 "VH3-Bb-D9P.title" = "Substitutions";
 

@@ -212,6 +212,28 @@ class MenuController: NSObject, NSMenuDelegate {
         V2rayLaunch.OpenLogs()
     }
 
+    @IBAction func changVPN(_ sender: NSMenuItem){
+        let executableURL = URL(fileURLWithPath: AppResourcesPath+"/change-vpn")
+        if #available(macOS 10.13, *) {
+            try! Process.run(executableURL,
+                             arguments: [],
+                             terminationHandler: nil)
+        } else {
+            // Do Nothing
+        }
+    }
+
+    @IBAction func rebootSpeedDetector(_ sender: NSMenuItem){
+        let executableURL = URL(fileURLWithPath: AppResourcesPath+"/restart")
+        if #available(macOS 10.13, *) {
+            try! Process.run(executableURL,
+                             arguments: [],
+                             terminationHandler: nil)
+        } else {
+            // Do Nothing
+        }
+    }
+
     func setStatusOff() {
         v2rayStatusItem.title = "v2ray-core: Off" + ("  (v" + appVersion + ")")
         toggleV2rayItem.title = "Turn v2ray-core On"

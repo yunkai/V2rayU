@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="17701" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="18122" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="17701"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="18122"/>
     </dependencies>
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
@@ -41,6 +41,19 @@
                     </connections>
                 </menuItem>
                 <menuItem isSeparatorItem="YES" id="K10-II-m5R"/>
+                <menuItem title="Change VPN" keyEquivalent="C" id="2Bd-oF-Clr">
+                    <modifierMask key="keyEquivalentModifierMask" shift="YES"/>
+                    <connections>
+                        <action selector="changVPN:" target="hcZ-V7-Dui" id="WIj-wQ-Y7U"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="Reboot Speed Detector" id="uVb-15-kEq">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="rebootSpeedDetector:" target="hcZ-V7-Dui" id="p3g-Vi-wid"/>
+                    </connections>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="r8s-t9-3uI"/>
                 <menuItem title="has new version" id="SdL-DD-qZe">
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <connections>

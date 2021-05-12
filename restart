@@ -1,0 +1,11 @@
+#! /bin/bash
+export http_proxy="socks5://127.0.0.1:1096"
+export https_proxy="socks5://127.0.0.1:1096"
+
+pkill v2ray-retry
+
+DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
+
+nohup "$DIR/v2ray-retry" m 2>&1 >~/.V2rayU/v2ray-retry.log &
+
+echo $DIR
