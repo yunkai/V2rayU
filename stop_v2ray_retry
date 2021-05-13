@@ -1,0 +1,2 @@
+#! /bin/bash
+pkill v2ray-retry

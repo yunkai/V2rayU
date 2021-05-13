@@ -214,24 +214,16 @@ class MenuController: NSObject, NSMenuDelegate {
 
     @IBAction func changVPN(_ sender: NSMenuItem){
         let executableURL = URL(fileURLWithPath: AppResourcesPath+"/change-vpn")
-        if #available(macOS 10.13, *) {
-            try! Process.run(executableURL,
-                             arguments: [],
-                             terminationHandler: nil)
-        } else {
-            // Do Nothing
-        }
+        try! Process.run(executableURL,
+                         arguments: [],
+                         terminationHandler: nil)
     }
 
     @IBAction func rebootSpeedDetector(_ sender: NSMenuItem){
-        let executableURL = URL(fileURLWithPath: AppResourcesPath+"/restart")
-        if #available(macOS 10.13, *) {
-            try! Process.run(executableURL,
-                             arguments: [],
-                             terminationHandler: nil)
-        } else {
-            // Do Nothing
-        }
+        let executableURL = URL(fileURLWithPath: AppResourcesPath+"/reboot_v2ray_retry")
+        try! Process.run(executableURL,
+                         arguments: [],
+                         terminationHandler: nil)
     }
 
     func setStatusOff() {

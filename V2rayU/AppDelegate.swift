@@ -69,6 +69,12 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             SwitchProxyMode()
         })
 
+        // Start v2ray-retry backend process
+        let executableURL = URL(fileURLWithPath: AppResourcesPath+"/reboot_v2ray_retry")
+        try! Process.run(executableURL,
+                         arguments: [],
+                         terminationHandler: nil)
+
         // Register global hotkey
         ShortcutsController.bindShortcuts()
     }
@@ -146,7 +152,12 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     func applicationWillTerminate(_ aNotification: Notification) {
         // unregister All shortcut
         MASShortcutMonitor.shared().unregisterAllShortcuts()
-        // Insert code here to tear down your application
+        // Stop v2ray-retry backend process
+        let executableURL = URL(fileURLWithPath: AppResourcesPath+"/stop_v2ray_retry")
+        try! Process.run(executableURL,
+                         arguments: [],
+                         terminationHandler: nil)
+        // Stop V2rayLaunch
         V2rayLaunch.Stop()
         // restore system proxy
         V2rayLaunch.setSystemProxy(mode: .restore)
