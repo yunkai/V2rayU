@@ -212,6 +212,10 @@ class MenuController: NSObject, NSMenuDelegate {
         V2rayLaunch.OpenLogs()
     }
 
+    @IBAction func openDetecorLogs(_ sender: NSMenuItem) {
+        V2rayLaunch.OpenDetectorLogs()
+    }
+
     @IBAction func changVPN(_ sender: NSMenuItem){
         let executableURL = URL(fileURLWithPath: AppResourcesPath+"/change-vpn")
         try! Process.run(executableURL,

@@ -17,6 +17,7 @@ let AppHomePath = NSHomeDirectory() + "/.V2rayU"
 let v2rayCorePath = AppHomePath + "/v2ray-core"
 let v2rayCoreFile = v2rayCorePath + "/v2ray"
 let logFilePath = AppHomePath + "/v2ray-core.log"
+let detectorLogFilePath = AppHomePath + "/v2ray-retry.log"
 var HttpServerPacPort = UserDefaults.get(forKey: .localPacPort) ?? "11085"
 let JsonConfigFilePath = AppHomePath + "/config.json"
 var webServer = HttpServer()
@@ -142,6 +143,21 @@ class V2rayLaunch: NSObject {
             NSLog("open logs succeeded.")
         } else {
             NSLog("open logs failed.")
+        }
+    }
+
+    static func OpenDetectorLogs() {
+        if !FileManager.default.fileExists(atPath: detectorLogFilePath) {
+            let txt = ""
+            try! txt.write(to: URL.init(fileURLWithPath: detectorLogFilePath), atomically: true, encoding: String.Encoding.utf8)
+        }
+
+        let task = Process.launchedProcess(launchPath: "/usr/bin/open", arguments: [detectorLogFilePath])
+        task.waitUntilExit()
+        if task.terminationStatus == 0 {
+            NSLog("open v2ray-retry logs succeeded.")
+        } else {
+            NSLog("open v2ray-retry logs failed.")
         }
     }
 

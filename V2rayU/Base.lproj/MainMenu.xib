@@ -53,6 +53,12 @@
                         <action selector="rebootSpeedDetector:" target="hcZ-V7-Dui" id="p3g-Vi-wid"/>
                     </connections>
                 </menuItem>
+                <menuItem title="View Detector Log" id="LST-kU-hy2">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="openDetecorLogs:" target="hcZ-V7-Dui" id="4bL-M9-2vL"/>
+                    </connections>
+                </menuItem>
                 <menuItem isSeparatorItem="YES" id="r8s-t9-3uI"/>
                 <menuItem title="has new version" id="SdL-DD-qZe">
                     <modifierMask key="keyEquivalentModifierMask"/>

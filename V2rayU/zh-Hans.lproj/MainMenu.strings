@@ -98,6 +98,9 @@
 /* Class = "NSMenuItem"; title = "Reboot Speed Detector"; ObjectID = "uVb-15-kEq"; */
 "uVb-15-kEq.title" = "重启速度探测器";
 
+/* Class = "NSMenuItem"; title = "View Detector Log"; ObjectID = "LST-kU-hy2"; */
+"LST-kU-hy2.title" = "查看探测器日志";
+
 /* Class = "NSMenu"; title = "Substitutions"; ObjectID = "VH3-Bb-D9P"; */
 "VH3-Bb-D9P.title" = "Substitutions";
 
