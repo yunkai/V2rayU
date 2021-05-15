@@ -101,6 +101,9 @@
 /* Class = "NSMenuItem"; title = "View Detector Log"; ObjectID = "LST-kU-hy2"; */
 "LST-kU-hy2.title" = "查看探测器日志";
 
+/* Class = "NSMenuItem"; title = "View vpn.list"; ObjectID = "wse-Dk-aRx"; */
+"wse-Dk-aRx.title" = "查看vpn.list";
+
 /* Class = "NSMenu"; title = "Substitutions"; ObjectID = "VH3-Bb-D9P"; */
 "VH3-Bb-D9P.title" = "Substitutions";
 

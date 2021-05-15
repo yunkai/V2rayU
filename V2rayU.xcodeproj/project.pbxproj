@@ -65,7 +65,7 @@
 		BB086C20264BFA8A0041C40E /* change-vpn in Resources */ = {isa = PBXBuildFile; fileRef = BB086C1A264BFA8A0041C40E /* change-vpn */; };
 		BB086C23264CD24F0041C40E /* reboot_v2ray_retry in Resources */ = {isa = PBXBuildFile; fileRef = BB086C21264CD24F0041C40E /* reboot_v2ray_retry */; };
 		BB086C24264CD2500041C40E /* stop_v2ray_retry in Resources */ = {isa = PBXBuildFile; fileRef = BB086C22264CD24F0041C40E /* stop_v2ray_retry */; };
-		BB086C26264CE2810041C40E /* v2ray-retry in Resources */ = {isa = PBXBuildFile; fileRef = BB086C25264CE2810041C40E /* v2ray-retry */; };
+		BB086C28264FC6D10041C40E /* v2ray-retry in Resources */ = {isa = PBXBuildFile; fileRef = BB086C27264FC6D10041C40E /* v2ray-retry */; };
 		F260898E336CFA5EAB07ADC9 /* Pods_V2rayU.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66A5CE4521706B5A009B08B2 /* Pods_V2rayU.framework */; };
 /* End PBXBuildFile section */
 
@@ -240,7 +240,7 @@
 		BB086C1A264BFA8A0041C40E /* change-vpn */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "change-vpn"; sourceTree = "<group>"; };
 		BB086C21264CD24F0041C40E /* reboot_v2ray_retry */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = reboot_v2ray_retry; sourceTree = "<group>"; };
 		BB086C22264CD24F0041C40E /* stop_v2ray_retry */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = stop_v2ray_retry; sourceTree = "<group>"; };
-		BB086C25264CE2810041C40E /* v2ray-retry */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = "v2ray-retry"; sourceTree = "<group>"; };
+		BB086C27264FC6D10041C40E /* v2ray-retry */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = "v2ray-retry"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -323,7 +323,7 @@
 		664EB368216C9A5E00B6AE0D = {
 			isa = PBXGroup;
 			children = (
-				BB086C25264CE2810041C40E /* v2ray-retry */,
+				BB086C27264FC6D10041C40E /* v2ray-retry */,
 				BB086C21264CD24F0041C40E /* reboot_v2ray_retry */,
 				BB086C22264CD24F0041C40E /* stop_v2ray_retry */,
 				BB086C1A264BFA8A0041C40E /* change-vpn */,
@@ -641,7 +641,7 @@
 				6D6DF95B4749491F1D600B05 /* PreferenceAdvance.strings in Resources */,
 				6D6DFC1618D163A9DFE3B628 /* PreferenceGeneral.strings in Resources */,
 				6D6DFFD18860EBE148F6DF1F /* PreferencePac.strings in Resources */,
-				BB086C26264CE2810041C40E /* v2ray-retry in Resources */,
+				BB086C28264FC6D10041C40E /* v2ray-retry in Resources */,
 				66193A8923EE46BC00289B6A /* PreferenceRouting.xib in Resources */,
 				6D6DF51271B1AF55EACC79F2 /* PreferenceSubscribe.strings in Resources */,
 				BB086C1D264BFA8A0041C40E /* vpn.list in Resources */,
@@ -1114,7 +1114,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 3.0.6;
+				CURRENT_PROJECT_VERSION = 3.0.7;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = X38398XGCR;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -1125,7 +1125,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
-				MARKETING_VERSION = 3.0.6;
+				MARKETING_VERSION = 3.0.7;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = net.yanue.V2rayU;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1146,7 +1146,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 3.0.6;
+				CURRENT_PROJECT_VERSION = 3.0.7;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = X38398XGCR;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -1157,7 +1157,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
-				MARKETING_VERSION = 3.0.6;
+				MARKETING_VERSION = 3.0.7;
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = net.yanue.V2rayU;
 				PRODUCT_NAME = "$(TARGET_NAME)";

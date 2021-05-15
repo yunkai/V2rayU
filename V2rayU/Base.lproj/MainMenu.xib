@@ -66,6 +66,12 @@
                         <action selector="goRelease:" target="hcZ-V7-Dui" id="yMr-mv-496"/>
                     </connections>
                 </menuItem>
+                <menuItem title="View vpn.list" id="wse-Dk-aRx">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="viewVPNList:" target="hcZ-V7-Dui" id="jJG-qd-rIh"/>
+                    </connections>
+                </menuItem>
                 <menuItem title="View config.json" id="b3o-tG-rp3">
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <connections>

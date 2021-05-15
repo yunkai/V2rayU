@@ -216,6 +216,14 @@ class MenuController: NSObject, NSMenuDelegate {
         V2rayLaunch.OpenDetectorLogs()
     }
 
+    @IBAction func viewVPNList(_ sender: NSMenuItem){
+        Process.launchedProcess(launchPath: "/usr/bin/open", arguments: [
+            "-a",
+            "TextEdit",
+            "/Applications/V2rayU.app/Contents/Resources/vpn.list"
+        ])
+    }
+
     @IBAction func changVPN(_ sender: NSMenuItem){
         let executableURL = URL(fileURLWithPath: AppResourcesPath+"/change-vpn")
         try! Process.run(executableURL,
